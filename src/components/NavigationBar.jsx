@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import SearchRecipes from "./SearchRecipes";
+import logo from "../assets/logo.png";
 
 export default function NavigationBar({ setFoodData }) {
   return (
@@ -16,7 +17,7 @@ export default function NavigationBar({ setFoodData }) {
         <Navbar expand="lg" className="bg-body-tertiary border-bottom">
           <Container fluid>
             <Navbar.Brand href="/">
-              <img src="./src/assets/logo-80.png" width="100px" />
+              <img src={logo} width="100px" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
