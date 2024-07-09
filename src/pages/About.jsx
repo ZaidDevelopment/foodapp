@@ -1,5 +1,13 @@
 import Testimonial from "../components/Testimonial";
 import Carousel from "react-bootstrap/Carousel";
+//assets
+import headerVideo from "../assets/woman_with_headdresses.mp4";
+import testimonialsImg0 from "../assets/pretty-smiling.jpg";
+import testimonialsImg1 from "../assets/portrait-blonde-bearded.jpg";
+import testimonialsImg2 from "../assets/young-bearded-man.jpg";
+import marketingImg0 from "../assets/man-holding-plate.jpg";
+import marketingImg1 from "../assets/top-view-chocolate-roll.jpg";
+import marketingImg2 from "../assets/top-view-cake-slices.jpg";
 
 export default function About() {
   // Dummy data. This should be coming from a database.
@@ -10,7 +18,7 @@ export default function About() {
       id: 0,
       header: "Delicious Recipes",
       testimonial: `" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."`,
-      src: "./src/assets/pretty-smiling.jpg",
+      src: testimonialsImg0,
       personName: "Jane",
       location: "New York",
     },
@@ -18,7 +26,7 @@ export default function About() {
       id: 1,
       header: "Easy Baking Instructions",
       testimonial: `" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."`,
-      src: "./src/assets/portrait-blonde-bearded.jpg",
+      src: testimonialsImg1,
       personName: "Brad",
       location: "Illinois",
     },
@@ -26,7 +34,7 @@ export default function About() {
       id: 2,
       header: "Chef Secrets Exposed",
       testimonial: `" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."`,
-      src: "./src/assets/young-bearded-man.jpg",
+      src: testimonialsImg2,
       personName: "George",
       location: "London",
     },
@@ -43,10 +51,7 @@ export default function About() {
         }}
       >
         <video autoPlay loop muted width="100%" height="450">
-          <source
-            src="./src/assets/woman_with_headdresses.mp4"
-            type="video/mp4"
-          />
+          <source src={headerVideo} type="video/mp4" />
         </video>
       </div>
 
@@ -78,10 +83,7 @@ export default function About() {
             </p>
           </div>
           <div className="col-md-5 order-md-1">
-            <img
-              src="./src/assets/man-holding-plate.jpg"
-              className="rounded img-fluid"
-            />
+            <img src={marketingImg0} className="rounded img-fluid" />
           </div>
         </div>
 
@@ -101,10 +103,7 @@ export default function About() {
             </p>
           </div>
           <div className="col-md-5">
-            <img
-              src="./src/assets/top-view-chocolate-roll.jpg"
-              className="rounded img-fluid"
-            />
+            <img src={marketingImg1} className="rounded img-fluid" />
           </div>
         </div>
 
@@ -122,10 +121,7 @@ export default function About() {
             </p>
           </div>
           <div className="col-md-5 order-md-1">
-            <img
-              src="./src/assets/top-view-cake-slices.jpg"
-              className="rounded img-fluid"
-            />
+            <img src={marketingImg2} className="rounded img-fluid" />
           </div>
         </div>
 
