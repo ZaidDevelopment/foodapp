@@ -1,21 +1,19 @@
-import styles from "./recipedetails.module.css";
-
 export default function RecipeServings({ food }) {
   return (
-    <div className={styles.servingsDetails}>
-      <p>
+    <div className="row" style={{ opacity: "70%" }}>
+      <p className="col-6 mb-0">
         <strong>Time: </strong>
         {food.readyInMinutes} Minutes
       </p>
-      <p>
+      <p className="col-6 mb-0">
         <strong>Serves: </strong>
         {food.servings}
       </p>
-      <p>
+      <p className="col-6">
         <strong>Diet: </strong>
         {food.vegeterian ? "Vegetarian" : "Non-Vegeterian"}
       </p>
-      <p>
+      <p className="col-6">
         <strong>$: </strong>
         {(food.pricePerServing / 100).toFixed(2)} Per serving
       </p>
