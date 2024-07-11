@@ -27,7 +27,6 @@ export default function RecipeDetails({ foodId }) {
       <div className={styles.recipeCard}>
         <h1 className={styles.recipeName}>{food.title}</h1>
         <hr style={{ opacity: "30%" }} />
-        <br />
         {/* Recipe Servings */}
         <RecipeServings food={food} />
         <img className={styles.recipeImage} src={food.image} alt="" />
