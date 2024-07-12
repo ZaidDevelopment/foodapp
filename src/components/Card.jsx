@@ -1,10 +1,11 @@
 import styles from "./card.module.css";
 import { useNavigate } from "react-router-dom";
+import fallback from "../assets/fallback.jpg";
 
 export default function Card({ food, setFoodId }) {
   const navigate = useNavigate();
   const handleImageError = (e) => {
-    e.target.src = "./src/assets/fallback.jpg";
+    e.target.src = fallback;
   };
 
   return (
