@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-export default function Login() {
+const Login = () => {
   const navigate = useNavigate();
   return (
     <div className="container-fluid">
@@ -54,4 +54,5 @@ export default function Login() {
       </div>
     </div>
   );
-}
+};
+export default Login;

@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import SearchRecipes from "./SearchRecipes";
 import logo from "../assets/logo.png";
 
-export default function NavigationBar({ setFoodData }) {
+const NavigationBar = ({ setFoodData }) => {
   return (
     <div className="w-100">
       <div
@@ -17,7 +17,7 @@ export default function NavigationBar({ setFoodData }) {
         <Navbar expand="lg" className="bg-body-tertiary border-bottom">
           <Container fluid>
             <Navbar.Brand href="/">
-              <img src={logo} width="100px" />
+              <img src={logo} alt="Logo" width="100px" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -30,7 +30,7 @@ export default function NavigationBar({ setFoodData }) {
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/pricing">Pricing</Nav.Link>
-                <NavDropdown title="Link" id="navbarScrollingDropdown">
+                <NavDropdown title="Links" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="https://www.hellofresh.co.uk/">
                     Hello Fresh
                   </NavDropdown.Item>
@@ -53,4 +53,5 @@ export default function NavigationBar({ setFoodData }) {
       </div>
     </div>
   );
-}
+};
+export default NavigationBar;

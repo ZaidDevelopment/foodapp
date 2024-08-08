@@ -1,4 +1,4 @@
-export default function DemoPage() {
+const DemoPage = () => {
   return (
     <header>
       <div className="mx-auto text-center pb-5" style={{ maxWidth: "700px" }}>
@@ -14,4 +14,5 @@ export default function DemoPage() {
       </div>
     </header>
   );
-}
+};
+export default DemoPage;

@@ -2,10 +2,16 @@ import styles from "./card.module.css";
 import { useNavigate } from "react-router-dom";
 import fallback from "../assets/fallback.jpg";
 
-export default function Card({ food, setFoodId }) {
+const Card = ({ food, setFoodId }) => {
   const navigate = useNavigate();
+
   const handleImageError = (e) => {
     e.target.src = fallback;
+  };
+
+  const handleClick = () => {
+    setFoodId(food.id);
+    navigate("/RecipeDetails");
   };
 
   return (
@@ -22,17 +28,12 @@ export default function Card({ food, setFoodId }) {
           : food.title}
       </p>
       <div className={styles.buttonContainer}>
-        <button
-          onClick={() => {
-            setFoodId(food.id);
-            console.log(food.id);
-            navigate("/RecipeDetails");
-          }}
-          className={styles.itemButton}
-        >
+        <button onClick={handleClick} className={styles.itemButton}>
           View Recipe
         </button>
       </div>
     </div>
   );
-}
+};
+
+export default Card;

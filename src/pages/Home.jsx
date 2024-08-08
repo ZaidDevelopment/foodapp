@@ -1,6 +1,5 @@
 import ListOfRecipes from "../components/ListOfRecipes";
-
-export default function Home({ foodData, setFoodId }) {
+const Home = ({ foodData, setFoodId }) => {
   return (
     <div className="container">
       <header className="mb-5">
@@ -25,4 +24,6 @@ export default function Home({ foodData, setFoodId }) {
       )}
     </div>
   );
-}
+};
+
+export default Home;

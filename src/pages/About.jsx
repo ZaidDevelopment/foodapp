@@ -9,7 +9,7 @@ import marketingImg0 from "../assets/man-holding-plate.jpg";
 import marketingImg1 from "../assets/top-view-chocolate-roll.jpg";
 import marketingImg2 from "../assets/top-view-cake-slices.jpg";
 
-export default function About() {
+const About = () => {
   // Dummy data. This should be coming from a database.
   const sampleText =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -83,7 +83,11 @@ export default function About() {
             </p>
           </div>
           <div className="col-md-5 order-md-1">
-            <img src={marketingImg0} className="rounded img-fluid" />
+            <img
+              src={marketingImg0}
+              className="rounded img-fluid"
+              alt="man holding plate"
+            />
           </div>
         </div>
 
@@ -103,7 +107,11 @@ export default function About() {
             </p>
           </div>
           <div className="col-md-5">
-            <img src={marketingImg1} className="rounded img-fluid" />
+            <img
+              src={marketingImg1}
+              className="rounded img-fluid"
+              alt="chocolate roll"
+            />
           </div>
         </div>
 
@@ -121,7 +129,11 @@ export default function About() {
             </p>
           </div>
           <div className="col-md-5 order-md-1">
-            <img src={marketingImg2} className="rounded img-fluid" />
+            <img
+              src={marketingImg2}
+              className="rounded img-fluid"
+              alt="cake slices"
+            />
           </div>
         </div>
 
@@ -160,4 +172,5 @@ export default function About() {
       </div>
     </>
   );
-}
+};
+export default About;
