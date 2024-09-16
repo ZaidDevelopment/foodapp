@@ -50,7 +50,7 @@ const About = () => {
           margin: "auto",
         }}
       >
-        <video autoPlay loop muted width="100%" height="450">
+        <video autoPlay loop muted playsInline width="100%" height="450">
           <source src={headerVideo} type="video/mp4" />
         </video>
       </div>
