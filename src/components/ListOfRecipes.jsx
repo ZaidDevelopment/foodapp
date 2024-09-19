@@ -9,7 +9,7 @@ const ListOfRecipes = ({ foodData, setFoodId }) => {
     <Container fluid>
       <Row className="gy-5 gx-5">
         {foodData.map((food) => (
-          <Col key={food.id} lg={4} md={6} xs={12}>
+          <Col key={food.id} lg={4} sm={6} xs={12}>
             <Card food={food} setFoodId={setFoodId} />
           </Col>
         ))}
